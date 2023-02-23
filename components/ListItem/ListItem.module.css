@@ -1,0 +1,19 @@
+.listItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e0e0df;
+    padding: 15px 25px;
+    border-radius: 5px;
+}
+
+.listItem button {
+    background-color: #b72121;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
