@@ -1,4 +1,9 @@
-export interface listItem {
-    name: string,
-    id: string
+export interface listContext {
+  list: listObject[];
+  updateList: Function;
+}
+
+export interface listObject {
+  name: string;
+  id: string;
 }
