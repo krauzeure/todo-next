@@ -6,7 +6,6 @@ import { Nunito } from '@next/font/google';
 import List from '../components/List/List';
 import AddItem from '@/components/AddItem/AddItem';
 
-// If loading a variable font, you don't need to specify the font weight
 const nunito = Nunito({ subsets: ['latin'] });
 
 export default function Home() {
