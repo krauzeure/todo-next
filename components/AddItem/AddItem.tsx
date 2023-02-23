@@ -10,7 +10,7 @@ export default function AddItem() {
       <form>
         <label htmlFor='addItem'>Ajouter à la liste</label>
         <div>
-          <input type='text' value='' id='addItem' />
+          <input type='text' id='addItem' />
           <input className={nunito.className} type='submit' value='Ajouter' />
         </div>
       </form>
