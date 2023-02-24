@@ -4,6 +4,7 @@ import { Nunito } from '@next/font/google';
 
 import List from '../components/List/List';
 import AddItem from '@/components/AddItem/AddItem';
+import ThemeSelector from '@/components/ThemeSelector/ThemeSelector';
 
 const nunito = Nunito({ subsets: ['latin'] });
 
@@ -18,6 +19,7 @@ export default function Home() {
       </Head>
 
       <main className={`${styles.main} ${nunito.className}`}>
+        <ThemeSelector />
         <h1>Todo List</h1>
         <AddItem />
         <List />
