@@ -15,6 +15,24 @@
   --input-bg: #fff;
 }
 
+.midnight-theme {
+  --primary: #002853;
+  --secondary: #fefefe;
+  --add: #73286F;
+  --delete: #511C51;
+  --border: #00468C;
+  --input-bg: #00468C;
+}
+
+.german-theme {
+  --primary: #fefefe;
+  --secondary: #4C5B5C;
+  --add: #4C5B5C;
+  --delete: #FF715B;
+  --border: #F9CB40;
+  --input-bg: #fff;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
