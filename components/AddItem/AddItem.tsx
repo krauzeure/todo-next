@@ -21,7 +21,7 @@ export default function AddItem() {
       <form onSubmit={(e) => addToList(e)}>
         <label htmlFor='addItem'>Ajouter à la liste</label>
         <div>
-          <input type='text' id='addItem' value={newItem} onChange={e => setNewItem(e.target.value)}/>
+          <input className={nunito.className} type='text' id='addItem' value={newItem} onChange={e => setNewItem(e.target.value)}/>
           <input className={nunito.className} type='submit' value='Ajouter'/>
         </div>
       </form>
