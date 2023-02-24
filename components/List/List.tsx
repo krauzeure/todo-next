@@ -12,7 +12,7 @@ export default function List() {
     <ul className={styles.list}>
       {list &&
         list.map((item, index) => {
-          return <ListItem key={item.id} name={item.name} />;
+          return <ListItem key={item.id} name={item.name} id={item.id} />;
         })}
     </ul>
   );
