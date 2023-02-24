@@ -7,3 +7,10 @@ export interface listObject {
   name: string;
   id: string;
 }
+
+export interface theme {
+    name: string,
+    primary: string,
+    secondary: string,
+    tertiary: string
+}
