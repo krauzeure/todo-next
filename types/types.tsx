@@ -14,3 +14,8 @@ export interface theme {
     secondary: string,
     tertiary: string
 }
+
+export interface themeContext {
+    theme: string,
+    updateTheme: Function
+}
