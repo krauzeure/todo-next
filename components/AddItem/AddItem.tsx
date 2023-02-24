@@ -14,6 +14,7 @@ export default function AddItem() {
     const addToList = (e:React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         updateList([...list, {name: newItem, id: uuidv4()}])
+        setNewItem("")
     }
 
   return (
