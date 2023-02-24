@@ -4,9 +4,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 15px;
+}
+
+.SelectedTheme {
     border: 1px solid #e0e0df;
     border-radius: 5px;
-    padding: 15px;
 }
 
 .Theme:not(:last-child) {
