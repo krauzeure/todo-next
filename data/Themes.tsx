@@ -12,10 +12,4 @@ export const themes: theme[] = [
     "primary": "blue",
     "secondary": "#fff",
     "tertiary": "green"
-    },
-    {
-    "name": "dark",
-    "primary": "blue",
-    "secondary": "#fff",
-    "tertiary": "green"
     }]
