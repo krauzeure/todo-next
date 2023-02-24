@@ -13,8 +13,10 @@ export default function AddItem() {
 
     const addToList = (e:React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-        updateList([...list, {name: newItem, id: uuidv4()}])
+        const newList = [...list, {name: newItem, id: uuidv4()}]
+        updateList(newList)
         setNewItem("")
+        window.localStorage.setItem('todoList', JSON.stringify(newList));
     }
 
   return (

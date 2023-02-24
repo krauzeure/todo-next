@@ -12,6 +12,7 @@ export default function ListItem(props: { name: string, id: string }) {
   const deleteItem = () => {
     const newList = list.filter(item => item.id != props.id)
     updateList(newList)
+    window.localStorage.setItem('todoList', JSON.stringify(newList));
   }
 
   return (
