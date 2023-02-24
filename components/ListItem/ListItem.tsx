@@ -4,16 +4,16 @@ import { Nunito } from '@next/font/google';
 const nunito = Nunito({ subsets: ['latin'] });
 
 import { useContext } from 'react';
-import { GlobalListContext } from '../../context/ListContext';
+import { GlobalListContext } from '../../Context/ListContext';
 
-export default function ListItem(props: { name: string, id: string }) {
+export default function ListItem(props: { name: string; id: string }) {
   const { list, updateList } = useContext(GlobalListContext);
 
   const deleteItem = () => {
-    const newList = list.filter(item => item.id != props.id)
-    updateList(newList)
+    const newList = list.filter((item) => item.id != props.id);
+    updateList(newList);
     window.localStorage.setItem('todoList', JSON.stringify(newList));
-  }
+  };
 
   return (
     <li className={styles.listItem} onClick={deleteItem}>

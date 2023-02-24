@@ -3,10 +3,10 @@ import ListItem from '../ListItem/ListItem';
 import { useState, useEffect } from 'react';
 import styles from './List.module.css';
 import { useContext } from 'react';
-import { GlobalListContext } from '../../context/ListContext';
+import { GlobalListContext } from '../../Context/ListContext';
 
 export default function List() {
-  const {list, updateList} = useContext(GlobalListContext);
+  const { list, updateList } = useContext(GlobalListContext);
 
   return (
     <ul className={styles.list}>
