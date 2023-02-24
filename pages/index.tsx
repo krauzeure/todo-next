@@ -6,9 +6,15 @@ import List from '../components/List/List';
 import AddItem from '@/components/AddItem/AddItem';
 import ThemeSelector from '@/components/ThemeSelector/ThemeSelector';
 
+import { useContext } from 'react';
+import { ThemeContext } from '@/Context/ThemeContext';
+
 const nunito = Nunito({ subsets: ['latin'] });
 
 export default function Home() {
+
+  const { theme, updateTheme } = useContext(ThemeContext);
+
   return (
     <>
       <Head>
@@ -18,7 +24,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main className={`${styles.main} ${nunito.className}`}>
+      <main className={`${styles.main} ${nunito.className} ${theme}-theme`}>
         <ThemeSelector />
         <h1>Todo List</h1>
         <AddItem />
