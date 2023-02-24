@@ -7,10 +7,12 @@
 } */
 
 .classic-theme {
-  --primary: red;
+  --primary: #fefefe;
   --secondary: #333;
   --add: #198f38;
   --delete: #b72121;
+  --border: #e0e0df;
+  --input-bg: #fff;
 }
 
 * {

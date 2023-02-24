@@ -8,7 +8,7 @@
 }
 
 .SelectedTheme {
-    border: 1px solid #e0e0df;
+    border: 1px solid var(--border);
     border-radius: 5px;
 }
 

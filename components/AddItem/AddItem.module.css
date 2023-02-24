@@ -20,7 +20,7 @@
 }
 
 .container input:nth-child(2) {
-    background-color: #198f38;
+    background-color: var(--add);
     border: none;
     color: white;
     padding: 10px 25px;
@@ -28,4 +28,11 @@
     text-decoration: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.textInput {
+    background-color: var(--input-bg);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    color: var(--main);
 }

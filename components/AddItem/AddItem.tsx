@@ -24,7 +24,7 @@ export default function AddItem() {
         <label htmlFor='addItem'>Ajouter à la liste</label>
         <div>
           <input
-            className={nunito.className}
+            className={`${nunito.className} ${styles.textInput}`}
             type='text'
             id='addItem'
             value={newItem}
