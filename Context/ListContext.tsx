@@ -4,7 +4,7 @@ import { listObject } from '@/types/types';
 
 export const GlobalListContext = React.createContext<listContext>({
   list: [],
-  updateList: () => {},
+  updateList: ([]) => {},
 });
 
 // @ts-ignore
