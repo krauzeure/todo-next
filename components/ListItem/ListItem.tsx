@@ -1,12 +1,23 @@
-import React from 'react'
-import styles from './ListItem.module.css'
-import { Nunito } from '@next/font/google'
+import React from 'react';
+import styles from './ListItem.module.css';
+import { Nunito } from '@next/font/google';
+const nunito = Nunito({ subsets: ['latin'] });
 
-// If loading a variable font, you don't need to specify the font weight
-const nunito = Nunito({ subsets: ['latin'] })
+import { useContext } from 'react';
+import { GlobalListContext } from '../../context/ListContext';
 
-export default function ListItem(props: {name:string}) {
+export default function ListItem(props: { name: string, id: string }) {
+  const { list, updateList } = useContext(GlobalListContext);
+
+  const deleteItem = () => {
+    const newList = list.filter(item => item.id != props.id)
+    updateList(newList)
+  }
+
   return (
-    <li className={styles.listItem}><span>{props.name}</span><button className={nunito.className}>Supprimer</button></li>
-  )
+    <li className={styles.listItem} onClick={deleteItem}>
+      <span>{props.name}</span>
+      <button className={nunito.className}>Supprimer</button>
+    </li>
+  );
 }
