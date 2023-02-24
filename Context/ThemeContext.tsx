@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { themeContext } from '@/types/types';
 
-export const ThemeContext = React.createContext<{theme: string}>({
-  theme: ""
+export const ThemeContext = React.createContext<themeContext>({
+  theme: "",
+  updateTheme: () => {}
 });
 
 // @ts-ignore
@@ -11,7 +13,8 @@ export const ThemeProvider = (props) => {
   return (
     <ThemeContext.Provider
       value={{
-        theme: theme
+        theme: theme,
+        updateTheme: setTheme
       }}>
       {props.children}
     </ThemeContext.Provider>
