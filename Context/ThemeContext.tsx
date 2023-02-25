@@ -10,6 +10,15 @@ export const ThemeContext = React.createContext<themeContext>({
 export const ThemeProvider = (props) => {
   const [theme, setTheme] = useState<string>("classic");
 
+  useEffect(() => {
+    const locatStorageString = window.localStorage.getItem('todoList');
+    if (locatStorageString) {
+        const localStorageObject = JSON.parse(locatStorageString)
+        const theme = localStorageObject.theme
+        setTheme(theme);
+    } 
+  }, []);
+
   return (
     <ThemeContext.Provider
       value={{
