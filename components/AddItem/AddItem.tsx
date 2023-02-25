@@ -4,8 +4,8 @@ import { Nunito } from '@next/font/google';
 const nunito = Nunito({ subsets: ['latin'] });
 import { v4 as uuidv4 } from 'uuid';
 
-import { GlobalListContext } from '../../Context/ListContext'
-import { ThemeContext } from '../../Context/ThemeContext'
+import { GlobalListContext } from '../../Context/ListContext';
+import { ThemeContext } from '../../Context/ThemeContext';
 
 export default function AddItem() {
   const { list, updateList } = useContext(GlobalListContext);
@@ -25,7 +25,7 @@ export default function AddItem() {
 
   return (
     <section className={styles.container}>
-      <form onSubmit={(e) => addToList(e)}>
+      <form onSubmit={(e) => addToList(e)} aria-label='Ajouter un item'>
         <label htmlFor='addItem'>Ajouter à la liste</label>
         <div>
           <input
