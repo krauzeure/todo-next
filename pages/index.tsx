@@ -3,11 +3,11 @@ import styles from '@/styles/Home.module.css';
 import { Nunito } from '@next/font/google';
 
 import List from '../components/List/List';
-import AddItem from '@/components/AddItem/AddItem';
-import ThemeSelector from '@/components/ThemeSelector/ThemeSelector';
+import AddItem from '../components/AddItem/AddItem'
+import ThemeSelector from '../components/ThemeSelector/ThemeSelector'
 
 import { useContext } from 'react';
-import { ThemeContext } from '@/Context/ThemeContext';
+import { ThemeContext } from '../Context/ThemeContext'
 
 const nunito = Nunito({ subsets: ['latin'] });
 
