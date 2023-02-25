@@ -27,7 +27,7 @@ export const themes: theme[] = [
     },
     {
         "name": "beach",
-        "primary": "#EEE9DA",
+        "primary": "#4c57a6",
         "secondary": "#E2ECF2",
         "tertiary": "#406F87"   
     },
