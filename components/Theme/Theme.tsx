@@ -4,12 +4,18 @@ import { theme } from '@/types/types';
 
 import { useContext } from 'react';
 import { ThemeContext } from '@/Context/ThemeContext';
+import { GlobalListContext } from '../../Context/ListContext';
 
 export default function Theme(props: { theme: theme }) {
   const { theme, updateTheme } = useContext(ThemeContext);
+  const { list } = useContext(GlobalListContext);
 
   const editTheme = () => {
     updateTheme(props.theme.name)
+    window.localStorage.setItem(
+        'todoList',
+        JSON.stringify({ theme: props.theme.name, list: list })
+      );
   }
 
   return (
