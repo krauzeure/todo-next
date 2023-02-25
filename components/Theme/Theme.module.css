@@ -9,7 +9,9 @@
 }
 
 .SelectedTheme {
-    border: 1px solid var(--border);
+    /* border: 1px solid var(--border);
+    border-radius: 5px; */
+    background-color: var(--border);
     border-radius: 5px;
 }
 
