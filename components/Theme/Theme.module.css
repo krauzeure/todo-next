@@ -1,5 +1,5 @@
 .Theme {
-    width: 100px;
+    min-width: 100px;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -9,8 +9,6 @@
 }
 
 .SelectedTheme {
-    /* border: 1px solid var(--border);
-    border-radius: 5px; */
     background-color: var(--border);
     border-radius: 5px;
 }
