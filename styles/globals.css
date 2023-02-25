@@ -66,6 +66,46 @@
   --button-color: #AD0006;
 }
 
+.darkblue-theme {
+  --primary: #222831;
+  --secondary: #EEEEEE;
+  --add: #006F75;
+  --delete: #006F75;
+  --border: #00ADB5;
+  --input-bg: #000;
+  --button-color: #EEEEEE;
+}
+
+.teal-theme {
+  --primary: #F5F5F5;
+  --secondary: #364F6B;
+  --add: #C9033E;
+  --delete: #C9033E;
+  --border: #00ADB5;
+  --input-bg: #fff;
+  --button-color: #EEEEEE;
+}
+
+.purple-theme {
+  --primary: #eee;
+  --secondary: #364F6B;
+  --add: #6A2C70;
+  --delete: #6A2C70;
+  --border: #B14FBA;
+  --input-bg: #fff;
+  --button-color: #EEEEEE;
+}
+
+.blue-theme {
+  --primary: #eee;
+  --secondary: #364F6B;
+  --add: #036BB0;
+  --delete: #036BB0;
+  --border: #85CDFD;
+  --input-bg: #fff;
+  --button-color: #EEEEEE;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

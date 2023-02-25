@@ -36,4 +36,28 @@ export const themes: theme[] = [
         "primary": "#FAE3D9",
         "secondary": "#FFB6B9",
         "tertiary": "#2D716E"   
+    },
+    {
+        "name": "darkblue",
+        "primary": "#222831",
+        "secondary": "#00ADB5",
+        "tertiary": "#EEEEEE"   
+    },
+    {
+        "name": "teal",
+        "primary": "#00ADB5",
+        "secondary": "#EEE",
+        "tertiary": "#C9033E"   
+    },
+    {
+        "name": "purple",
+        "primary": "#eee",
+        "secondary": "#6A2C70",
+        "tertiary": "#B14FBA"   
+    },
+    {
+        "name": "blue",
+        "primary": "#eee",
+        "secondary": "#85CDFD",
+        "tertiary": "#036BB0"   
     }]
