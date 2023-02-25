@@ -11,7 +11,7 @@
 .listItem button {
     background-color: var(--delete);
     border: none;
-    color: white;
+    color: var(--button-color);
     padding: 10px 25px;
     text-align: center;
     text-decoration: none;

@@ -22,7 +22,7 @@
 .container input:nth-child(2) {
     background-color: var(--add);
     border: none;
-    color: white;
+    color: var(--button-color);
     padding: 10px 25px;
     text-align: center;
     text-decoration: none;
