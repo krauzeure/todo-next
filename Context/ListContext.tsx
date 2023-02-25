@@ -14,8 +14,9 @@ export const GlobalListProvider = (props) => {
   useEffect(() => {
     const locatStorageString = window.localStorage.getItem('todoList');
     if (locatStorageString) {
-      const localStorageList = JSON.parse(locatStorageString);
-      setList(localStorageList);
+        const localStorageObject = JSON.parse(locatStorageString)
+        const list = localStorageObject.list
+      setList(list);
     } 
   }, []);
 
