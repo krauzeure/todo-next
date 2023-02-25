@@ -1,4 +1,4 @@
-import { theme } from "@/types/types"
+import { theme } from "../types/types"
 
 export const themes: theme[] = [
     {
