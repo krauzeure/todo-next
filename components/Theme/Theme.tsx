@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './Theme.module.css';
-import { theme } from '@/types/types';
+import { theme } from '../../types/types'
 
 import { useContext } from 'react';
-import { ThemeContext } from '@/Context/ThemeContext';
+import { ThemeContext } from '../../Context/ThemeContext'
 import { GlobalListContext } from '../../Context/ListContext';
 
 export default function Theme(props: { theme: theme }) {

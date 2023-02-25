@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './ThemeSelector.module.css';
 
 import Theme from '../Theme/Theme';
-import { themes } from '@/data/Themes';
+import { themes } from '../../data/Themes'
 
 export default function ThemeSelector() {
 

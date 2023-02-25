@@ -5,7 +5,7 @@ const nunito = Nunito({ subsets: ['latin'] });
 
 import { useContext } from 'react';
 import { GlobalListContext } from '../../Context/ListContext';
-import { ThemeContext } from '@/Context/ThemeContext';
+import { ThemeContext } from '../../Context/ThemeContext';
 
 export default function ListItem(props: { name: string; id: string }) {
   const { list, updateList } = useContext(GlobalListContext);
