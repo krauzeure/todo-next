@@ -20,6 +20,7 @@
 }
 
 .container input:nth-child(2) {
+    -webkit-appearance: none;
     background-color: var(--add);
     border: none;
     color: var(--button-color);
@@ -46,6 +47,7 @@
 
     .container input:nth-child(1) {
         margin: 20px 0;
+        width: 100%;
     }
     
 }
