@@ -5,9 +5,11 @@ const nunito = Nunito({ subsets: ['latin'] });
 import { v4 as uuidv4 } from 'uuid';
 
 import { GlobalListContext } from '@/Context/ListContext';
+import { ThemeContext } from '@/Context/ThemeContext';
 
 export default function AddItem() {
   const { list, updateList } = useContext(GlobalListContext);
+  const { theme } = useContext(ThemeContext);
   const [newItem, setNewItem] = useState<string>('');
 
   const addToList = (e: React.FormEvent<HTMLFormElement>) => {
@@ -15,7 +17,10 @@ export default function AddItem() {
     const newList = [...list, { name: newItem, id: uuidv4() }];
     updateList(newList);
     setNewItem('');
-    window.localStorage.setItem('todoList', JSON.stringify(newList));
+    window.localStorage.setItem(
+      'todoList',
+      JSON.stringify({ theme: theme, list: newList })
+    );
   };
 
   return (
