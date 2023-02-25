@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { listContext } from '@/types/types';
-import { listObject } from '@/types/types';
+import { listContext, listObject } from '../types/types'
 
 export const GlobalListContext = React.createContext<listContext>({
   list: [],
