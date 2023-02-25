@@ -9,10 +9,11 @@
 .classic-theme {
   --primary: #fefefe;
   --secondary: #333;
-  --add: #198f38;
+  --add: #168333;
   --delete: #b72121;
   --border: #e0e0df;
   --input-bg: #fff;
+  --button-color: #fefefe;
 }
 
 .dark-theme {
@@ -22,6 +23,7 @@
   --delete: #971b1b;
   --border: #000;
   --input-bg: #000;
+  --button-color: #fefefe;
 }
 
 .midnight-theme {
@@ -31,6 +33,7 @@
   --delete: #511C51;
   --border: #00468C;
   --input-bg: #00468C;
+  --button-color: #fefefe;
 }
 
 .green-theme {
@@ -40,24 +43,27 @@
   --delete: #609966;
   --border: #9DC08B;
   --input-bg: #f2f5e1;
+  --button-color: #fefefe;
 }
 
 .beach-theme {
   --primary: #fefefe;
-  --secondary: #6096B4;
-  --add: #93BFCF;
-  --delete: #93BFCF;
+  --secondary: #406F87;
+  --add: #406F87;
+  --delete: #406F87;
   --border: #EEE9DA;
-  --input-bg: #d8e5ed;
+  --input-bg: #E2ECF2;
+  --button-color: #fefefe;
 }
 
 .cream-theme {
   --primary: #fefefe;
-  --secondary: #61C0BF;
+  --secondary: #2D716E;
   --add: #FFB6B9;
   --delete: #FFB6B9;
-  --border: #BBDED6;
-  --input-bg: #eaf5f2;
+  --border: #FAE3D9;
+  --input-bg: #F8FCFA;
+  --button-color: #AD0006;
 }
 
 * {

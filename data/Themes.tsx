@@ -4,7 +4,7 @@ export const themes: theme[] = [
     {
         "name": "classic",
         "primary": "#e0e0df",
-        "secondary": "#198f38",
+        "secondary": "#168333",
         "tertiary": "#b72121"
     },
     {
@@ -28,12 +28,12 @@ export const themes: theme[] = [
     {
         "name": "beach",
         "primary": "#EEE9DA",
-        "secondary": "#93BFCF",
-        "tertiary": "#6096B4"   
+        "secondary": "#E2ECF2",
+        "tertiary": "#406F87"   
     },
     {
         "name": "cream",
         "primary": "#FAE3D9",
         "secondary": "#FFB6B9",
-        "tertiary": "#BBDED6"   
+        "tertiary": "#2D716E"   
     }]
